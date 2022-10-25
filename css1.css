@@ -1,0 +1,41 @@
+table{
+
+    border-radius: 5px;
+    border: 2px solid burlywood ;
+    font-size: 20px;
+    text-align: center;
+    font-family: verdana;
+    background-color: burlywood;
+}
+
+input 
+{
+font-family: verdana;
+    width: 180px;
+    border: 2px solid grey;
+    height: 30px;
+    border-radius: 15px;
+
+div
+{
+    border:15px;
+    border-radius: 15px;
+}
+
+}
+button
+{
+font-family: verdana;
+    border: 3px solid grey ;
+    width: 180px;
+    height: 30px;
+    border-radius: 15px;
+}
+td{
+border-radius: 8px;
+
+}
+tr{
+border-radius: 5px;
+
+}
