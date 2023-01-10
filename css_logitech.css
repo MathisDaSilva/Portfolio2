@@ -1,0 +1,20 @@
+html
+{
+   background: url(fond_facture.jpg);
+   color: white;
+}
+
+
+.section
+{
+    padding: 2rem;
+    
+
+}
+
+legend
+{
+   padding: 1rem;
+}
+
+

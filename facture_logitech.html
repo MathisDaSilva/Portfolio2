@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<script type="text/javascript">
+		
+		function resultat()
+		{
+			var a = document.getElementById('p1').value;
+			var b = document.getElementById('q1').value;
+	        var c =Number(a)*Number(b);
+	        r1.value=c;
+            var d = document.getElementById('p2').value;
+	        var e = document.getElementById('q2').value;
+	        var f =Number(d)*Number(e);
+	        r2.value=f;
+	        var g = document.getElementById('p3').value;
+	        var h = document.getElementById('q3').value;
+	        var i =Number(g)*Number(h);
+	        r3.value=i;
+	        var j = document.getElementById('p4').value;
+	        var k = document.getElementById('q4').value;
+	        var l =Number(j)*Number(k);
+	        r4.value=l;
+            var m = document.getElementById('p5').value;
+	        var n = document.getElementById('q5').value;
+	        var o =Number(m)*Number(n);
+	        r5.value=o;
+	        var p = document.getElementById('p6').value;
+	        var q = document.getElementById('q6').value;
+	        var r =Number(p)*Number(q);
+	        r6.value=r;
+
+	        r7.value=c+f+i+l+o+r
+
+
+
+		}
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="css_logitech.css">
+	
+</head>
+
+<body>
+<fieldset border="2">
+        <legend>Facture</legend>
+    <div>
+<table border="0">
+    <tr>
+        <td rowspan="4">
+        <img src="logitech.jpg" alt="buisness logo" width="105px"> </td> 
+        <td> Logitech</td> </tr>
+        <tr>
+         <td> 94 Rue de Villiers, 92300 Levallois-Perret</td></tr>
+         <tr>
+             <td> Date: 15/11/2022</td>
+         </tr>
+         <tr>
+             <td> N° de facture<input type="number"></td>
+         </tr>
+</tr>
+</tr>
+</table>
+</div>
+</fieldset>
+
+<div class="section">
+	
+	<table border="0">
+		<tr>
+			<td colspan="2"><h1>Destinataire</h1></td>
+			<td colspan="2"><h1>Envoyez à</h1></td>
+		</tr> <br>
+		<tr>
+			<td><input type="text" placeholder="Nom"></td>
+			<td><input type="text" placeholder="Nom"></td>
+					</tr>
+		<tr>
+			<td><input type="text" placeholder="Nom de la société"></td>
+			<td><input type="text" placeholder="Nom de la société"></td>
+		</tr>
+
+        <tr>
+        	<td><input type="text" placeholder="Adresse postale"></td>
+        	<td><input type="text" placeholder="Adresse postale"></td>
+        </tr>
+        <tr>
+			<td><input type="text" placeholder="Téléphone"></td>
+			<td><input type="text" placeholder="Téléphone"></td>
+		</tr>
+
+        <tr>
+        	<td><input type="text" placeholder="Email"></td>
+        	<td><input type="text" placeholder="Email"></td>
+        </tr>
+
+
+	</table>
+</div>
+<br>
+
+<div class="tableau">
+<table border=1px>
+<tr>
+   
+
+    <td>Articles: </td>
+    <td>Quantité: </td>
+    <td>Prix unitaire: </td>
+    <td> Total</td>
+    
+</tr>	
+
+<tr>
+	
+<td><input type="text" name="" placeholder="entrez un article"> </td>
+    <td><input id="p1" type="text" name="p1" placeholder=""> </td>
+    <td><input id="q1" type="text" name="q1" placeholder=""> </td>
+    <td> <input id="r1" type="text" name="r1" placeholder="0"></td>
+    
+
+</tr>
+
+<tr>
+	
+<td><input type="text" name="" placeholder="entrez un article"> </td>
+    <td><input id="p2" type="text" name="p2" placeholder=""> </td>
+    <td><input id="q2" type="text" name="q2" placeholder=""> </td>
+    <td> <input id="r2" type="text" name="r2" placeholder="0"></td>
+   
+
+</tr>
+
+<tr>
+	
+<td><input type="text" name="" placeholder="entrez un article"> </td>
+    <td><input id="p3" type="text" name="p3" placeholder=""> </td>
+    <td><input id="q3" type="text" name="q3" placeholder=""> </td>
+    <td> <input id="r3" type="text" name="r3" placeholder="0"></td>
+
+
+</tr>
+
+<tr>
+	
+<td><input type="text" name="" placeholder="entrez un article"> </td>
+    <td><input id="p4" type="text" name="p4" placeholder=""> </td>
+    <td><input id="q4" type="text" name="q4" placeholder=""> </td>
+    <td> <input id="r4" type="text" name="r4" placeholder="0"></td>
+   
+
+</tr>
+
+<tr>
+	
+<td><input type="text" name="" placeholder="entrez un article"> </td>
+    <td><input id="p5" type="text" name="p5" placeholder=""> </td>
+    <td><input id="q5" type="text" name="q5" placeholder=""> </td>
+    <td> <input id="r5" type="text" name="r5" placeholder="0"></td>
+   
+
+</tr>
+
+<tr>
+	
+<td><input type="text" name="" placeholder="entrez un article"> </td>
+    <td><input id="p6" type="text" name="p6" placeholder=""> </td>
+    <td><input id="q6" type="text" name="q6" placeholder=""> </td>
+    <td> <input id="r6" type="text" name="r6" placeholder="0"></td>
+   
+
+</tr>
+</div>
+<table>
+<tr>
+    <td> <input Type="button" value="Réinitialiser" onClick="history.go(0)"></td>
+   <td> <button onclick="resultat()">Calculer</button></td>
+</tr>
+
+<div class="calcul">
+<tr rowspan="6">
+	<td colspan="6"></td>
+	<td></td>
+	<td></td>
+<td> SOUS-TOTAL: <input id="r7" type="number" name="r7" readonly></td>
+
+</tr>
+<tr>
+	<td></td>
+	<td> remise: <input type="text" name=""> </td>
+</tr>
+
+</div>
+
+ </table>
+</body>
+</html>
+
+
